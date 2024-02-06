@@ -1,0 +1,343 @@
+smac;baseURL: "https://Babanaxe.github.io"
+languageCode: "en-us"
+title: "Esteban Georget"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 30
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: AP
+      name: AP/Stages
+      title: AP/Stages
+      url: /ap
+      weight: 1
+   
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Hugo Profile"
+  description: Text about my cool site
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/fav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+  
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    # defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # color:
+  #   textColor:
+  #   secondaryTextColor:
+  #   backgroundColor:
+  #   secondaryBackgroundColor:
+  #   primaryColor:
+  #   secondaryColor:
+
+  #   darkmode:
+  #     textColor:
+  #     secondaryTextColor:
+  #     backgroundColor:
+  #     secondaryBackgroundColor:
+  #     primaryColor:
+  #     secondaryColor:
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Hugo Profile" # Brand name for the brand | default is the title variable
+    disableSearch: false
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Bonjour, mon nom est"
+    title: "Esteban."
+    subtitle: "Etudiant en BTS SIO, option SISR"
+    content: "En étude d'informatique, en Brevet de Technicien Supérieur dans la fillière Service Informatique des Organisations, option Solution Infrastructure Système Réseau."
+    image: /images/baban.jpg
+    bottomImage:
+      enable: true
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: false
+      name: "Resume"
+      url: "#"
+      download: false
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/Babanaxe
+        - icon: fab fa-discord
+          url: https://discordapp.com/users/babanaxe
+      customIcons:
+        # - icon: /fav.png
+          # url: "https://example.com"
+
+  # About
+  about:
+    enable: true
+    title: "Compétences"
+    image: "/images/baban.jpg"
+    content: |-
+      Etudiant en BTS SIO au lycée Edme Bouchardon à Chaumont
+      
+      
+    skills:
+      enable: true
+      title: "voici quelques langages/notions acquises:"
+      items:
+        - "HTML"
+        - "CSS"
+        - "JavaScript"
+        - "TCP/IP"
+        - "Linux"
+        - "Windows"
+
+  # Experience
+  experience:
+    enable: true
+    title: "Expérience Professionnelle"
+    items:
+      - job: "Stage ingénieur en Forge"
+        company: "Forge de Bologne"
+        companyUrl: "https://www.lisi-aerospace.com/en/"
+        date: "Décembre 2019 - Décembre 2019"
+        featuredLink:
+          enable: false
+          name: "View the project"
+        content: "Stage de découverte d'une semaine en 3ème.
+         Tâches réalisées: Réalisation de fiches de risques potentiels, utilisation de logiciel de CAO (NX), visite des locaux, présentation des machines et prévisualisation de chaine de production."
+
+      - job: "Manager E-Sport"
+        company: "Wild Spirit Esport"
+        companyUrl: "https://twitter.com/i/flow/login?redirect_after_login=%2Fwildspirit_es"
+        date: "Novembre 2022 - Dec 2022"
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        info:
+          enable: true
+          content: Manager pendant deux mois.
+        content: "Manager de deux Line Up sur le jeu vidéal Counter Strike Global Offensive sous la bannière de Wild Spirit Esport.
+        Missions réalisées: Recrutement des joueurs, staff (coach principal, coach performance etc..), oraganisation des équipes, inscription aux tournois, réalisation de planning, manager les équipes, régler les litiges, organiser les réunions et faire cahier des charges."
+         
+          
+
+  # Education
+  education:
+    enable: true
+    title: "Parcours Universitaire"
+    index: false
+    items:
+      - title: "BTS SIO"
+        school:
+          name: "Lycée Edme Bouchardon, Chaumont"
+          url: "https://lyc-bouchardon.monbureaunumerique.fr"
+        date: "Octobre 2023 "
+        content: "Option: SISR - Langue étudiée: Anglais"
+       
+      - title: "Baccalauréat STMG"
+        school:
+          name: "Lycée Edme Bouchardon, Chaumont"
+          url: "https://lyc-bouchardon.monbureaunumerique.fr"
+        date: "Septembre 2020 - Juin 2023"
+        content: "Spécialitée: SIG - Langues étudiées: Anglais, Allemand - Option: Latin (En 2nd).
+        Activités et associations: Club radio et club échec, délégué de la vie lycéenne (2 ans), délégué au conseil d'administration (1 an) et éco-délégué (1 an)."
+        featuredLink:
+          enable: false
+          
+      - title: "Brevet National des Collèges"
+        school:
+          name: "Collège Marie-Calvès, Froncles"
+          url: "https://clg-calves.monbureaunumerique.fr"
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+          
+
+  # Achievements
+  achievements:
+    enable: true
+    title: "Certifications"
+    items:
+      - title: Mooc Anssi
+        content: Appronfondissement des connaissances en sécurité informatique
+        url: https://example.com
+        image: /images/logo-anssi.jpg
+      - title: CISCO
+        content: Développement de conaissances liées à l'informatique
+        image: /images/cisco.png
+     
+
+  # projects
+  projects:
+    enable: false 
+    title: "Projets"
+    items:
+      - title: Hugo Profile
+        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
+        image: /images/projects/profile.png
+        featured:
+          name: Demo
+          link: https://hugo-profile.netlify.app
+        badges:
+          - "Hugo"
+          - "Bootstrap"
+          - "Javascript"
+        links:
+          - icon: fa fa-envelope
+            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/hugo-profile
+          - icon: fab fa-twitter
+            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+
+      - title: Image Converter
+        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
+        image: /images/projects/converter.jpg
+        featured:
+          name: Demo
+          link: https://django-converter.herokuapp.com
+        badges:
+          - "Django"
+          - "Bootstrap"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/converter
+
+      - title: Hugo Profile V2
+        content: A clean and simple Hugo template for personal portfolio and blog.
+        image: /images/projects/profile2.jpg
+        featured:
+          name: Demo V2
+          link: https://hugo-profile-2.netlify.app
+        badges:
+          - "Hugo"
+          - "Bootstrap"
+          - "Javascript"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/HugoProfileV2
+
+  #Contact
+  contact:
+    enable: true
+    title: "Contactez-moi"
+    content: Ma boite mail est toujours ouverte, si vous avez des questions n'hésitez pas, je vous répondrez quand je pourrai ! 
+    email: esteban.georget@orange.fr
+    btnName: Mail
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: false
+      disableFeaturedImage: false
+    socialNetworks:
+
+      linkedin: https://linkedin.com/in/estebangeorget
+      
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    readTime:
+      enable: false
+      content: "min read"
+    scrollprogress:
+      enable: true
+
+  # For translations
+  terms:
+    read: "Lire"
+    toc: "Sommaire"
+    copyright: "All rights reserved"
+    pageNotFound: "Page non existante"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "2 Jan 2006"
+    articleList: "2 Jan 2006"
+    articleRecent: "2 Jan 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
